@@ -212,18 +212,28 @@ const sumTD = function () {
 // };
 
 //EX47
+// window.onload = function () {
+//   const deleteButton = document.getElementById("deleteButton");
+  
+//   deleteButton.addEventListener("click", function () {
+//     const td = document.getElementsByTagName("td");
+//     randomtd = Math.floor(Math.random() * td.length) ;
+
+//     for (let i = 0; i < td.length; i++) {
+//       if (i === randomtd) {
+//         console.log(i)
+//         td[i].remove();
+//       }
+//     }
+//   });
+// };
+
+//EX48
 window.onload = function () {
-  const deleteButton = document.getElementById("deleteButton");
-  deleteButton.addEventListener("click", function () {
-    const td = document.getElementsByTagName("td");
-    randomtd = Math.floor(Math.random() * td.length) + 1;
-
-    for (let i = 0; i < td.length; i++) {
-
-      if(i = random){
-        td[i].remove()
-      }
-    }
-    
-  })
-} 
+  const td = document.getElementsByTagName("td");
+  for (let i = 0; i < td.length; i++) {
+    td[i].addEventListener("click", function () {
+      td[i].style.backgroundColor = "blue";
+    });
+  }
+};
