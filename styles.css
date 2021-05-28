@@ -1,0 +1,53 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  width: 50%;
+  text-align: center;
+  border-collapse: collapse;
+}
+tr div{
+    border: 6px solid red;
+}
+
+table {
+  border-radius: 15px;
+}
+
+td{
+    border-color: green;
+}
+
+p{
+   margin: 5px;
+ }
+
+img {
+  height: 50px;
+  width: 50px;
+}
+body {
+  max-width: 500px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+
+a {
+  color: blue;
+}
+.newClass {
+  border: 1px solid black;
+}
+.fontClass{
+    font-size: 15pt;
+    font-weight: bold;
+}
+.hideContent{
+    visibility: hidden;
+}
+
+tr.border{
+    outline: 2px dotted red;
+}
