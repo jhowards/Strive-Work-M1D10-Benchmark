@@ -78,58 +78,54 @@ const higherSum = function (testArray1, testArray2) {
 };
 console.log(higherSum(testArray1, testArray2));
 
-
-
 //DOM
 //EX 31
-let grabContainers = document.getElementById("container")
+let grabContainers = document.getElementById("container");
 
 //EX32
-let grabTD = document.getElementsByTagName("td")
+let grabTD = document.getElementsByTagName("td");
 
 //EX33
-window.onload = function(){
-    let grabTD = document.getElementsByTagName("td")
-    for (let i = 0; i < grabTD.length; i++) {
-        text = grabTD[i].innerText
-        console.log(text)
-    }
-}
-
+// window.onload = function () {
+//   let grabTD = document.getElementsByTagName("td");
+//   for (let i = 0; i < grabTD.length; i++) {
+//     text = grabTD[i].innerText;
+//     console.log(text);
+//   }
+// };
 
 //EX34
-const changeHeading = function(){
-  let grabHeading = document.querySelector("h1")
-  grabHeading.innerText = "This text has been changed"
-}
+const changeHeading = function () {
+  let grabHeading = document.querySelector("h1");
+  grabHeading.innerText = "This text has been changed";
+};
 
 //EX35
-const newRow = function(){
-  let row = document.createElement("tr")
-  let rowText = document.createElement("td")
-  rowText.innerText = "New Row"
-  row.appendChild(rowText)
-  row.classList.add("border")
-  let grabTable = document.getElementById("table1")
-  grabTable.appendChild(row)
-  
-}
+const newRow = function () {
+  let row = document.createElement("tr");
+  let rowText = document.createElement("td");
+  rowText.innerText = "New Row";
+  row.appendChild(rowText);
+  row.classList.add("border");
+  let grabTable = document.getElementById("table1");
+  grabTable.appendChild(row);
+};
 
 //EX36
-const addClass = function(){
-  let rows = document.getElementsByTagName("tr")
+const addClass = function () {
+  let rows = document.getElementsByTagName("tr");
   for (let i = 0; i < rows.length; i++) {
-    rows[i].classList.add("test")
-}  
-} 
+    rows[i].classList.add("test");
+  }
+};
 
 //EX37
-const redLink = function(){
+const redLink = function () {
   let links = document.getElementsByTagName("a");
   for (let i = 0; i < links.length; i++) {
-    links[i].style.backgroundColor = "red"
+    links[i].style.backgroundColor = "red";
   }
-}
+};
 
 //EX38
 // window.onload = function(){
@@ -137,15 +133,47 @@ const redLink = function(){
 // }
 
 //EX39
-const newItems = function(itemInput){
-  let list = document.querySelector("ul")
+const newItems = function (itemInput) {
+  let list = document.querySelector("ul");
   let item = document.createElement("li");
-  item.innerText = itemInput
-  list.appendChild(item)
-}
+  item.innerText = itemInput;
+  list.appendChild(item);
+};
 
 //EX40
 const emptyList = function () {
   let list = document.querySelector("ul");
-  list.innerHTML = ''
+  list.innerHTML = "";
+};
+
+//EXTRA
+
+//EX41
+// window.onload = function () {
+//   let link = document.querySelector(".link");
+//   link.addEventListener("mouseover", function () {
+//     alert(link);
+//   });
+// };
+
+//EX42
+window.onload = function () {
+  const hideImages = document.getElementById("hideImages")
+  hideImages.addEventListener("click", function () {
+    let images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+       images[i].classList.toggle("hideImage");
+    }
+  });
+
+//EX43
+const hideTable = document.getElementById("hideTable")
+hideTable.addEventListener("click", function () {
+  let tables = document.getElementsByTagName("table");
+  for (let i = 0; i < tables.length; i++) {
+     tables[i].classList.toggle("hideTable");
+  }
+});
+
+
 };

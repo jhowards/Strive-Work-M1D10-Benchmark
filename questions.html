@@ -323,9 +323,40 @@
     // EXTRA
 
     // 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+    let link = document.querySelector(".link");
+    link.addEventListener("mouseover", function () {
+      alert(link);
+    });
+
     // 42) Add a button to hide every image on the page
+
+    const hideImages = document.getElementById("hideImages");
+    hideImages.addEventListener("click", function () {
+      let images = document.getElementsByTagName("img");
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.toggle("hideImage");
+      }
+    });
+    // <input type="button" id="hideImages" value="Hide Images">
+    // .hideImage{visibility: hidden;}
+
+
     // 43) Add a button to hide and show the table from the page
+
+    const hideTable = document.getElementById("hideTable");
+    hideTable.addEventListener("click", function () {
+      let tables = document.getElementsByTagName("table");
+      for (let i = 0; i < tables.length; i++) {
+        tables[i].classList.toggle("hideTable");
+      }
+    });
+
+    //<input type="button" id="hideTable" value="Hide Table">
+    // .hideTable{visibility: hidden;}
+
     // 44) Write a function to sum every number inside the TD (if the content is numeric)
+
+    
     // 45) Delete the last letter from the title each time the user clicks on it
     // 46) Change a single TD background color when the user clicks on it
     // 47) Add a button DELETE, on click it should delete a random TD from the page

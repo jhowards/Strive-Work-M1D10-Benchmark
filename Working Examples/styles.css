@@ -51,3 +51,18 @@ a {
 tr.border{
     outline: 2px dotted red;
 }
+#hideImages{
+  margin: 5px;
+  margin-bottom: 20px;
+  height:35px;
+  width: 90px;
+}
+#hideTable{
+  margin: 5px;
+  margin-bottom: 20px;
+  height:35px;
+  width: 90px;
+}
+.hideImage{visibility: hidden;}
+
+.hideTable{visibility: hidden;}
