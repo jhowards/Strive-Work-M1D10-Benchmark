@@ -63,6 +63,12 @@ tr.border{
   height:35px;
   width: 90px;
 }
+#deleteButton{
+  margin: 5px;
+  margin-bottom: 20px;
+  height:35px;
+  width: 90px;
+}
 .hideImage{visibility: hidden;}
 
 .hideTable{visibility: hidden;}

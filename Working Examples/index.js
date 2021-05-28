@@ -158,22 +158,72 @@ const emptyList = function () {
 
 //EX42
 window.onload = function () {
-  const hideImages = document.getElementById("hideImages")
+  const hideImages = document.getElementById("hideImages");
   hideImages.addEventListener("click", function () {
     let images = document.getElementsByTagName("img");
     for (let i = 0; i < images.length; i++) {
-       images[i].classList.toggle("hideImage");
+      images[i].classList.toggle("hideImage");
     }
   });
 
-//EX43
-const hideTable = document.getElementById("hideTable")
-hideTable.addEventListener("click", function () {
-  let tables = document.getElementsByTagName("table");
-  for (let i = 0; i < tables.length; i++) {
-     tables[i].classList.toggle("hideTable");
-  }
-});
-
-
+  //EX43
+  const hideTable = document.getElementById("hideTable");
+  hideTable.addEventListener("click", function () {
+    let tables = document.getElementsByTagName("table");
+    for (let i = 0; i < tables.length; i++) {
+      tables[i].classList.toggle("hideTable");
+    }
+  });
 };
+
+//EX44
+const sumTD = function () {
+  let td = document.getElementsByTagName("td");
+  let tdsum = null;
+  for (let i = 0; i < td.length; i++) {
+    tdtext = parseInt(td[i].innerText);
+
+    if (isNaN(tdtext)) {
+    } else {
+      tdsum += tdtext;
+    }
+  }
+  console.log(tdsum);
+};
+
+//EX45
+// window.onload = function(){
+//   const title = document.querySelector("h1");
+//   title.addEventListener("click", function () {
+//     titleText = title.innerText
+//    titleText = titleText.substring(0, titleText.length - 1);
+//    title.innerText = titleText
+//   });
+// }
+
+//EX46
+// window.onload = function () {
+//   const td = document.getElementsByTagName("td");
+//   for (let i = 0; i < td.length; i++) {
+//     td[i].addEventListener("click", function () {
+//       td[i].style.backgroundColor = "blue";
+//     });
+//   }
+// };
+
+//EX47
+window.onload = function () {
+  const deleteButton = document.getElementById("deleteButton");
+  deleteButton.addEventListener("click", function () {
+    const td = document.getElementsByTagName("td");
+    randomtd = Math.floor(Math.random() * td.length) + 1;
+
+    for (let i = 0; i < td.length; i++) {
+
+      if(i = random){
+        td[i].remove()
+      }
+    }
+    
+  })
+} 

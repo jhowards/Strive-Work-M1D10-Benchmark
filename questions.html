@@ -340,7 +340,6 @@
     // <input type="button" id="hideImages" value="Hide Images">
     // .hideImage{visibility: hidden;}
 
-
     // 43) Add a button to hide and show the table from the page
 
     const hideTable = document.getElementById("hideTable");
@@ -355,11 +354,44 @@
     // .hideTable{visibility: hidden;}
 
     // 44) Write a function to sum every number inside the TD (if the content is numeric)
+    const sumTD = function () {
+      let td = document.getElementsByTagName("td");
+      let tdsum = null;
+      for (let i = 0; i < td.length; i++) {
+        tdtext = parseInt(td[i].innerText);
+
+        if (isNaN(tdtext)) {
+        } else {
+          tdsum += tdtext;
+        }
+      }
+      console.log(tdsum);
+    };
+
+    // 45) Delete the last letter from the title each time the user clicks on it
+
+    window.onload = function () {
+      const title = document.querySelector("h1");
+      title.addEventListener("click", function () {
+        titleText = title.innerText;
+        titleText = titleText.substring(0, titleText.length - 1);
+        title.innerText = titleText;
+      });
+    };
+
+    // 46) Change a single TD background color when the user clicks on it
+    window.onload = function () {
+      const td = document.getElementsByTagName("td");
+      for (let i = 0; i < td.length; i++) {
+        td[i].addEventListener("click", function () {
+          td[i].style.backgroundColor = "blue";
+        });
+      }
+    };
+
+    // 47) Add a button DELETE, on click it should delete a random TD from the page
 
     
-    // 45) Delete the last letter from the title each time the user clicks on it
-    // 46) Change a single TD background color when the user clicks on it
-    // 47) Add a button DELETE, on click it should delete a random TD from the page
     // 48) Add a pink border to a cell when the mouse is over it
     // 49) Write a function to add a table with 4 rows and 3 columns programmatically
     // 50) Write a function to remove the table from the page
