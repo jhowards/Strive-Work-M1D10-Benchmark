@@ -2,25 +2,27 @@ table,
 th,
 td {
   border: 1px solid black;
-  width: 50%;
+  width: 60%;
   text-align: center;
   border-collapse: collapse;
 }
-tr div{
-    border: 6px solid red;
+tr div {
+  border: 6px solid red;
 }
 
 table {
   border-radius: 15px;
+  margin: 10px;
 }
 
-td{
-    border-color: green;
+td {
+  border-color: green;
+  min-width: 80px;
 }
 
-p{
-   margin: 5px;
- }
+p {
+  margin: 5px;
+}
 
 img {
   height: 50px;
@@ -40,35 +42,42 @@ a {
 .newClass {
   border: 1px solid black;
 }
-.fontClass{
-    font-size: 15pt;
-    font-weight: bold;
+.fontClass {
+  font-size: 15pt;
+  font-weight: bold;
 }
-.hideContent{
-    visibility: hidden;
+.hideContent {
+  visibility: hidden;
 }
 
-tr.border{
-    outline: 2px dotted red;
+tr.border {
+  outline: 2px dotted red;
 }
-#hideImages{
+#hideImages {
   margin: 5px;
   margin-bottom: 20px;
-  height:35px;
+  height: 35px;
   width: 90px;
 }
-#hideTable{
+#hideTable {
   margin: 5px;
   margin-bottom: 20px;
-  height:35px;
+  height: 35px;
   width: 90px;
 }
-#deleteButton{
+#deleteButton {
   margin: 5px;
   margin-bottom: 20px;
-  height:35px;
+  height: 35px;
   width: 90px;
 }
-.hideImage{visibility: hidden;}
+.hideImage {
+  visibility: hidden;
+}
 
-.hideTable{visibility: hidden;}
+.hideTable {
+  visibility: hidden;
+}
+.pinkBorder {
+  border: 6px solid pink;
+}

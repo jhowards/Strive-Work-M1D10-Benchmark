@@ -214,7 +214,7 @@ const sumTD = function () {
 //EX47
 // window.onload = function () {
 //   const deleteButton = document.getElementById("deleteButton");
-  
+
 //   deleteButton.addEventListener("click", function () {
 //     const td = document.getElementsByTagName("td");
 //     randomtd = Math.floor(Math.random() * td.length) ;
@@ -232,8 +232,25 @@ const sumTD = function () {
 window.onload = function () {
   const td = document.getElementsByTagName("td");
   for (let i = 0; i < td.length; i++) {
-    td[i].addEventListener("click", function () {
-      td[i].style.backgroundColor = "blue";
+    td[i].addEventListener("mouseover", function () {
+      td[i].classList.toggle("pinkBorder");
     });
   }
+};
+
+//EX49
+
+const addTable = function () {
+  const table = document.createElement("table");
+  const tablePos = document.getElementById("tablePos");
+  for (let i = 0; i < 4; i++) {
+    const tr = document.createElement("tr");
+    for (let i = 0; i < 3; i++) {
+      const td = document.createElement("td");
+      td.innerText = i;
+      tr.appendChild(td);
+    }
+    table.appendChild(tr);
+  }
+  tablePos.appendChild(table);
 };
