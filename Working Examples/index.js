@@ -77,3 +77,21 @@ const higherSum = function (testArray1, testArray2) {
   }
 };
 console.log(higherSum(testArray1, testArray2));
+
+
+
+//DOM
+//EX 31
+let grabContainers = document.getElementById("container")
+
+//EX32
+let grabTD = document.getElementsByTagName("td")
+
+//EX33
+window.onload = function(){
+    let grabTD = document.getElementsByTagName("td")
+    for (let i = 0; i < grabTD.length; i++) {
+        text = grabTD[i].innerText
+        console.log(text)
+    }
+}
