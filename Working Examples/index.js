@@ -242,6 +242,7 @@ window.onload = function () {
 
 const addTable = function () {
   const table = document.createElement("table");
+  table.classList.add("newTable")
   const tablePos = document.getElementById("tablePos");
   for (let i = 0; i < 4; i++) {
     const tr = document.createElement("tr");
@@ -254,3 +255,13 @@ const addTable = function () {
   }
   tablePos.appendChild(table);
 };
+
+//EX50
+
+const removeTable = function(){
+    const tableGrab = document.querySelectorAll(".newTable")
+      console.log(tableGrab)
+     let position = tableGrab.length
+     console.log(position)
+     tableGrab[position - 1].remove()  
+}

@@ -433,7 +433,16 @@
       }
       tablePos.appendChild(table);
     };
+
     // 50) Write a function to remove the table from the page
+    const removeTable = function(){
+    const tableGrab = document.querySelectorAll(".newTable")
+      console.log(tableGrab)
+     let position = tableGrab.length
+     console.log(position)
+     tableGrab[position - 1].remove()  
+}
+
   </script>
 
   <head> </head>
