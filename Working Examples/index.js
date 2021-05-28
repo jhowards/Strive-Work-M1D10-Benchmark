@@ -131,12 +131,12 @@ const redLink = function(){
   }
 }
 
-//EX34
+//EX38
 // window.onload = function(){
 //   console.log("page loaded")
 // }
 
-//EX35
+//EX39
 const newItems = function(itemInput){
   let list = document.querySelector("ul")
   let item = document.createElement("li");
@@ -144,7 +144,7 @@ const newItems = function(itemInput){
   list.appendChild(item)
 }
 
-//EX36
+//EX40
 const emptyList = function () {
   let list = document.querySelector("ul");
   list.innerHTML = ''
