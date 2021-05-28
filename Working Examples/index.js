@@ -95,3 +95,57 @@ window.onload = function(){
         console.log(text)
     }
 }
+
+
+//EX34
+const changeHeading = function(){
+  let grabHeading = document.querySelector("h1")
+  grabHeading.innerText = "This text has been changed"
+}
+
+//EX35
+const newRow = function(){
+  let row = document.createElement("tr")
+  let rowText = document.createElement("td")
+  rowText.innerText = "New Row"
+  row.appendChild(rowText)
+  row.classList.add("border")
+  let grabTable = document.getElementById("table1")
+  grabTable.appendChild(row)
+  
+}
+
+//EX36
+const addClass = function(){
+  let rows = document.getElementsByTagName("tr")
+  for (let i = 0; i < rows.length; i++) {
+    rows[i].classList.add("test")
+}  
+} 
+
+//EX37
+const redLink = function(){
+  let links = document.getElementsByTagName("a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.backgroundColor = "red"
+  }
+}
+
+//EX34
+// window.onload = function(){
+//   console.log("page loaded")
+// }
+
+//EX35
+const newItems = function(itemInput){
+  let list = document.querySelector("ul")
+  let item = document.createElement("li");
+  item.innerText = itemInput
+  list.appendChild(item)
+}
+
+//EX36
+const emptyList = function () {
+  let list = document.querySelector("ul");
+  list.innerHTML = ''
+};

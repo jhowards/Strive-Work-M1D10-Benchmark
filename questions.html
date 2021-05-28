@@ -251,27 +251,74 @@
     // DOM
 
     // 31) Get element with ID "container" from the page
-    let grabContainers = document.getElementById("container")
+    let grabContainers = document.getElementById("container");
 
     // 32) Get every "td" from the page
-    let grabTD = document.getElementsByTagName("td")
+    let grabTD = document.getElementsByTagName("td");
 
     // 33) Create a cycle that prints the text inside every td of the page
-    let grabTD = document.getElementsByTagName("td")
+    let grabTD = document.getElementsByTagName("td");
     for (let i = 0; i < grabTD.length; i++) {
-        text = grabTD[i].innerText
-        console.log(text)
+      text = grabTD[i].innerText;
+      console.log(text);
     }
 
     // 34) Write a function to change the heading of the page
+    const changeHeading = function () {
+      let grabHeading = document.querySelector("h1");
+      grabHeading.innerText = "This text has been changed";
+    };
 
-    
     // 35) Write a function to add an extra row to the table
+
+    const newRow = function () {
+      let row = document.createElement("tr");
+      let rowText = document.createElement("td");
+      rowText.innerText = "New Row";
+      row.appendChild(rowText);
+      let grabTable = document.getElementById("table1");
+      grabTable.appendChild(row);
+    };
+
     // 36) Write a function to add the class "test" to each row in the table
+
+    const addClass = function () {
+      let rows = document.getElementsByTagName("tr");
+      for (let i = 0; i < rows.length; i++) {
+        rows[i].classList.add("test");
+      }
+    };
+
     // 37) Write a function to add a red background to every link in the page
+
+    const redLink = function () {
+      let links = document.getElementsByTagName("a");
+      for (let i = 0; i < links.length; i++) {
+        links[i].style.backgroundColor = "red";
+      }
+    };
+
     // 38) Console log "Page loaded" when the page is correctly loaded
+
+    window.onload = function () {
+      console.log("page loaded");
+    };
+
     // 39) Write a function to add new items to a UL
+
+    const newItems = function (itemInput) {
+      let list = document.querySelector("ul");
+      let item = document.createElement("li");
+      item.innerText = itemInput;
+      list.appendChild(item);
+    };
+
     // 40) Write a function to empty a list
+
+    const emptyList = function () {
+      let list = document.querySelector("ul");
+      list.innerHTML = "";
+    };
 
     // EXTRA
 
